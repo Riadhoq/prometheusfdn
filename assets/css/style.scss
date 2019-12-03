@@ -1,4 +1,15 @@
-body {
-    background: linear-gradient(45deg, #383838 0%, #171717 100% );
-    display: grid;
-}
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+$enable-responsive-font-sizes: true;
+$gray-600: #6F6F6F;
+$gray-900: #2A2A2A;
+$grid-gutter-width: 20px !default;
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/reboot";
+
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities/display";
+@import "../../node_modules/bootstrap/scss/utilities/flex";
+@import "../../node_modules/bootstrap/scss/utilities/spacing";
+@import "partials/type";
+
