@@ -1,0 +1,28 @@
+.hero-text {
+	position: relative;
+	padding: 40px 15px;
+	&::before {
+		content: "";
+		width: 200%;
+		height: 160%;
+		position: absolute;
+		background: $blue;
+		top: -50%;
+		left: -50%;
+		border-radius: 50%;
+	}
+}
+
+.hero-header {
+	margin-top: 0;
+	@include top-dash;
+}
+
+.hero-image-container,
+.sub {
+	position: relative;
+}
+
+.hero-br {
+	display: none;
+}

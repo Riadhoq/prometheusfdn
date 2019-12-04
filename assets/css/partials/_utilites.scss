@@ -1,0 +1,40 @@
+.margin-top {
+	margin-top: $custom-spacing;
+}
+
+.margin-top-half {
+	margin-top: $custom-half-spacing;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.btn {
+	@include btn($blue, $yellow);
+}
+
+.btn.secondary {
+	@include btn($yellow, $blue);
+	border-color: $yellow;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.section-header {
+	display: inline-block;
+	border-bottom: 6px solid $yellow;
+	margin-top: 0;
+}

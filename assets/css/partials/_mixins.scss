@@ -1,0 +1,32 @@
+@mixin btn($color, $bg-color, $font-size: 12px) {
+	display: inline-block;
+	position: relative;
+	color: $color;
+	background-color: $bg-color;
+	font-size: $font-size;
+	font-weight: bold;
+	padding: 0.5em 1.675em;
+	margin-top: 1rem;
+	margin-right: 10px;
+	border: 2px solid $bg-color;
+	border-radius: 7px;
+	transition: background-color 0.3s ease-in-out;
+	&:not([disabled]):hover {
+		color: $bg-color;
+		background-color: $color;
+		@content;
+	}
+}
+
+@mixin top-dash($color: $yellow) {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 0.75em;
+		height: 6px;
+		background-color: $color;
+		top: -15px;
+		left: 0;
+	}
+}
