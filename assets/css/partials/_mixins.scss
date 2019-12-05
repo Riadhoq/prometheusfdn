@@ -30,3 +30,11 @@
 		left: 0;
 	}
 }
+
+@mixin radial-gradient($color: $light-blue, $width: 60%) {
+	background: radial-gradient(
+		circle at center,
+		$color calc(#{$width}),
+		transparent $width
+	);
+}
