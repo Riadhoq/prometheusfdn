@@ -1,8 +1,10 @@
 body {
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: $body-font;
 	font-size: 16px;
 	line-height: 1.625rem;
 	color: $gray-900;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 h1,
@@ -11,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Catamaran", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family: $header-font;
 	margin-top: 1rem;
 	margin-bottom: 0;
 }
@@ -38,7 +40,7 @@ h3 {
 	line-height: 2.4375rem;
 }
 
-h5 {
+h4 {
 	font-size: 1.25rem;
 	line-height: 1.6875rem;
 	font-weight: bold;

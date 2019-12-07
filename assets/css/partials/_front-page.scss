@@ -20,7 +20,7 @@
 
 .hero-header {
 	margin-top: 0;
-	@include top-dash;
+	position: relative;
 }
 
 .hero-image-container,
@@ -82,8 +82,40 @@
 }
 
 .circle-card {
-	height: 100%;
-	padding: 15% 40px;
-	max-width: 575px;
+	position: relative;
+	height: 0%;
+	padding-top: 100%;
 	margin: 0 auto;
+}
+
+.circle-card-content {
+	position: absolute;
+	top: 30%;
+	left: 23%;
+	transform: translate(-15%, -15%);
+}
+
+.footer {
+	border-top: 6px solid $yellow;
+}
+
+.footer-logo-container {
+	max-width: 720px;
+}
+
+.nav-link,
+.footer-link {
+	font-family: $header-font;
+	font-weight: bold;
+
+	a {
+		padding: 0.625em 1.125em;
+		color: $black;
+		display: inline-block;
+	}
+	&.primary a {
+		margin-top: 0.625rem;
+		background-color: $yellow;
+		border-radius: 7px;
+	}
 }

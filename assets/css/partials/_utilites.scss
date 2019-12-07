@@ -1,9 +1,33 @@
-.container-fluid {
-	padding-left: 0;
-	padding-right: 0;
+// .container-fluid {
+// 	padding-left: 0;
+// 	padding-right: 0;
+// }
+
+ul {
+	display: block;
+	list-style-type: none;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
 }
+
+.top-dash {
+	position: relative;
+	background-color: $yellow;
+	width: 2em;
+	height: 6px;
+	display: block;
+	margin-bottom: 1rem;
+}
+
 .margin-top {
 	margin-top: $custom-spacing;
+}
+
+.margin-bottom {
+	margin-bottom: $custom-spacing;
 }
 
 .margin-top-half {
@@ -50,11 +74,6 @@
 
 .overflow-hidden {
 	overflow: hidden;
-}
-
-.top-dash {
-	position: relative;
-	@include top-dash;
 }
 
 .border-none {

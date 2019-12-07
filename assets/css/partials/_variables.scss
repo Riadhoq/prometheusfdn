@@ -14,3 +14,25 @@ $light-orange: #f49c6a;
 
 $custom-spacing: 2.5rem;
 $custom-half-spacing: $custom-spacing / 2;
+
+$header-font: "Catamaran", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$body-font: "Open Sans", Arial, Helvetica, sans-serif;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1660px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1660px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
