@@ -22,7 +22,8 @@ input#top-nav-menu {
 	.line {
 		position: absolute;
 		width: 95%;
-		border: 1px solid $black;
+		border: 1px solid $gray-900;
+		background-color: $gray-900;
 		border-radius: 1px;
 		transform: rotate(0) scale(1);
 		transform-origin: right;
@@ -194,7 +195,7 @@ input#top-nav-menu {
 
 	a {
 		padding: 0.625em 1.125em;
-		color: $black;
+		color: $gray-900;
 		display: inline-block;
 	}
 	&.primary a {
