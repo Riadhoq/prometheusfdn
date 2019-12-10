@@ -23,7 +23,8 @@ p {
 	margin-bottom: 0;
 }
 
-h1 {
+h1,
+.banner-header {
 	font-size: 2.5rem;
 	line-height: 2.625rem;
 	font-weight: normal;
@@ -54,8 +55,38 @@ h4 {
 .sub {
 	font-weight: 600;
 	line-height: 1.375rem;
+	max-width: 40em;
 }
 
 .text-uppercase {
 	text-transform: uppercase;
+}
+
+@include media-breakpoint-up(md) {
+	html,
+	body {
+		font-size: 18px;
+		line-height: 1.34rem;
+	}
+
+	h1,
+	.banner-header {
+		font-size: 4rem;
+		line-height: 1.25;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+		line-height: 1.25;
+	}
+
+	h3 {
+		font-size: 2rem;
+		line-height: 2.4375rem;
+	}
+
+	.section-header ~ .sub {
+		margin-right: auto;
+		margin-left: auto;
+	}
 }

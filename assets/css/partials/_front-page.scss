@@ -56,7 +56,7 @@ input#top-nav-menu {
 	& ~ .nav-links {
 		overflow: hidden;
 		opacity: 1;
-		max-height: 150em;
+		max-height: 30em;
 		visibility: visible;
 	}
 }
@@ -69,7 +69,8 @@ input#top-nav-menu {
 	opacity: 0;
 	visibility: hidden;
 	transition-delay: 0s;
-	transition: visibility 0.3s ease-in-out, max-height 0.5s ease-in-out,
+	transition: visibility 0.3s ease-in-out,
+		max-height 0.5s cubic-bezier(0.44, 0.26, 0.22, 0.94),
 		opacity 0.5s ease-in-out;
 
 	li:last-of-type {
@@ -85,7 +86,8 @@ input#top-nav-menu {
 
 .hero-text {
 	position: relative;
-	padding: 40px 15px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	&::before {
 		content: "";
 		width: 200%;
@@ -99,13 +101,20 @@ input#top-nav-menu {
 	}
 }
 
-.about-prometheus-text {
+.about-prometheus-text-container {
 	padding: 0 15px;
+	position: relative;
 }
 
 .hero-header {
 	margin-top: 0;
 	position: relative;
+}
+
+.hero-image-container,
+.about-prometheus-image-container {
+	max-width: 575px;
+	margin: 0 auto;
 }
 
 .hero-image-container,
@@ -202,5 +211,102 @@ input#top-nav-menu {
 		margin-top: 0.625rem;
 		background-color: $yellow;
 		border-radius: 7px;
+	}
+}
+
+/** Responsive styles **/
+@include media-breakpoint-up(lg) {
+	.header-container {
+		margin-bottom: -1.2rem;
+	}
+
+	.hero-br {
+		display: block;
+	}
+
+	.navbar {
+		align-items: baseline;
+	}
+
+	.nav-links {
+		overflow: hidden;
+		opacity: 1;
+		max-height: 30em;
+		visibility: visible;
+		width: auto;
+	}
+
+	.toggle-label {
+		display: none;
+	}
+
+	.hero-container {
+		display: flex;
+	}
+
+	.hero-btn-group {
+		text-align: center;
+	}
+
+	.hero-text {
+		max-width: 48em;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		&::before {
+			content: "";
+			width: 175%;
+			height: 280%;
+			top: -88%;
+			left: -46%;
+			border-bottom-right-radius: 50%;
+			border-top-right-radius: 50%;
+		}
+	}
+
+	.hero-image-container {
+		margin: auto 0 0 auto;
+	}
+
+	.square-card {
+		padding: 2rem;
+	}
+
+	.about-prometheus {
+		display: flex;
+		background-color: $blue;
+	}
+	.about-prometheus-image-container,
+	.about-prometheus-text-container {
+		width: 50%;
+	}
+
+	.about-prometheus-image-container {
+		&::before {
+			content: none;
+		}
+		img {
+			z-index: 1;
+		}
+	}
+	.about-prometheus-text {
+		position: relative;
+		max-width: 46rem;
+	}
+
+	.about-prometheus-text-container {
+		display: flex;
+		align-items: center;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 150%;
+			height: 200%;
+			background: #c9e1fb;
+			z-index: 0;
+			top: -50%;
+			left: -25%;
+			border-bottom-left-radius: 50%;
+			border-top-left-radius: 50%;
+		}
 	}
 }

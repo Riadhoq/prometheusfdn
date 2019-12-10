@@ -23,8 +23,8 @@
 </head>
 
 <body>
-    <header class="header bg-gray">
-        <div class="container-xxl">
+    <header class="header bg-white">
+        <div class="header-container container-xxl">
             <div class="navbar">
                 <div class="nav-logo-container">
                     <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri() . '/assets/img/Group%2023.png' ?>" alt="">
@@ -48,31 +48,33 @@
     </header>
     <main>
         <section class="hero color-white bg-light-blue overflow-hidden">
-            <div class="hero-text">
-                <span class="top-dash"></span>
-                <h1 class="hero-header">
-                    Objectivists:<br class="hero-br" />
-                    Put your ideas to work.
-                </h1>
-                <p class="sub">Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea
-                    rebum. Stet clita kasd gubergren.</p>
-                <div>
-                    <a href="#" class="btn mt-4">Lorem Ipsum Dolor</a>
-                    <a href="#" class="btn secondary">Lorem Ipsum Dolor</a>
+            <div class="container-xxl hero-container">
+                <div class="hero-text">
+                    <span class="top-dash"></span>
+                    <h1 class="hero-header">
+                        Objectivists:<br class="hero-br" />
+                        Put your ideas to work.
+                    </h1>
+                    <p class="sub">Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna
+                        aliquyam erat, sed diam voluptua. At vero
+                        eos et accusam et justo duo dolores et ea
+                        rebum. Stet clita kasd gubergren.</p>
+                    <div class="hero-btn-group d-lg-flex">
+                        <a href="#" class="btn mt-4 flex-lg-fill">Lorem Ipsum Dolor</a>
+                        <a href="#" class="btn secondary mt-lg-4 flex-lg-fill">Lorem Ipsum Dolor</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image-container">
-                <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/assets/img/ar-at-typewriter-bw.png' ?>" alt="Ayn Rand Black & White Image">
+                <div class="hero-image-container">
+                    <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/assets/img/ar-at-typewriter-bw.png' ?>" alt="Ayn Rand Black & White Image">
+                </div>
             </div>
         </section>
         <section class="funding-program margin-top">
             <div class="container-xxl">
                 <div class="text-center">
-                    <h2 class="section-header">
+                    <h2 class="section-header color-blue">
                         Funding Program
                     </h2>
                     <p class="sub color-gray margin-top-half">
@@ -124,36 +126,38 @@
             <div class="about-prometheus-image-container">
                 <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/assets/img/PF Logo - Isolated.png' ?>" alt="Prometheus Torch Light Image">
             </div>
-            <div class="about-prometheus-text">
-                <h2 class="color-blue">
-                    About Prometheus Foundation
-                </h2>
-                <p>
-                    Prometheus Foundation (PF) is an independent, non-profit enterprise whose mission is to actively promote Objectivism, the philosophy of Ayn Rand. To this end, PF seeks and funds proposals from individual Objectivists as well as from for-profit and non-profit organizations.
-                </p>
-                <p>
-                    Prometheus Foundation operates with two funds: The Objectivist Venture Fund (OVF) and the New Intellectuals Fund (NIF). Carl Barney, a long-time advocate of Objectivist ideas, is the originator and sole funding source for Prometheus.
-                </p>
-                <p>
-                    Objectivist Venture Fund was first announced at the Ayn Rand Institute’s 2014 Objectivist Summer Conference, and inaugurated shortly thereafter. OVF underwrites innovative projects whose aim is to spread Ayn Rand’s ideas with maximum impact.
-                </p>
-                <div class="text-center mt-3">
-                    <a href="#" class="btn btn-blue">Lorem Ipsum Dolor</a>
+            <div class="about-prometheus-text-container">
+                <div class="about-prometheus-text">
+                    <h2 class="color-blue">
+                        About Prometheus Foundation
+                    </h2>
+                    <p>
+                        Prometheus Foundation (PF) is an independent, non-profit enterprise whose mission is to actively promote Objectivism, the philosophy of Ayn Rand. To this end, PF seeks and funds proposals from individual Objectivists as well as from for-profit and non-profit organizations.
+                    </p>
+                    <p>
+                        Prometheus Foundation operates with two funds: The Objectivist Venture Fund (OVF) and the New Intellectuals Fund (NIF). Carl Barney, a long-time advocate of Objectivist ideas, is the originator and sole funding source for Prometheus.
+                    </p>
+                    <p>
+                        Objectivist Venture Fund was first announced at the Ayn Rand Institute’s 2014 Objectivist Summer Conference, and inaugurated shortly thereafter. OVF underwrites innovative projects whose aim is to spread Ayn Rand’s ideas with maximum impact.
+                    </p>
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-blue">Lorem Ipsum Dolor</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="what-we-fund margin-top">
             <div class="container-xxl">
                 <div class="text-center">
-                    <h2 class="section-header">
+                    <h2 class="section-header color-blue">
                         What We Fund
                     </h2>
                     <p class="sub color-gray margin-top-half">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
                     </p>
                 </div>
-                <div class="row margin-top">
-                    <div class="col-md-4">
+                <div class="row margin-top justify-content-center">
+                    <div class="col-md-6 col-lg-4">
                         <div class="circle-card bg-light-orange">
                             <div class="circle-card-content">
                                 <h3 class="card-header text-left">
@@ -173,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="circle-card bg-light-yellow">
                             <div class="circle-card-content">
                                 <h3 class="card-header text-left">
@@ -189,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="circle-card bg-light-blue">
                             <div class="circle-card-content">
                                 <h3 class="card-header text-left">
@@ -215,21 +219,21 @@
         <section class="get-started bg-blue margin-top">
             <div class="container-fluid px-0">
                 <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/assets/img/corporate-image.jpg' ?>" alt="Women in discussing in front of laptop">
+                    <div class="col-lg-5">
+                        <img class="img-fluid h-100 w-100" src="<?php echo get_template_directory_uri() . '/assets/img/corporate-image.jpg' ?>" alt="Women in discussing in front of laptop">
                     </div>
-                    <div class="offset-md-1 col-md-6">
-                        <div class="px-3">
+                    <div class="col-lg-5">
+                        <div class="px-3 pl-5">
                             <span class="top-dash margin-top"></span>
-                            <h2 class="section-header color-white border-none">
+                            <h2 class="banner-header color-white">
                                 Let’s get started!
                             </h2>
-                            <p class="color-white">
+                            <p class="sub color-white">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
                             </p>
-                            <div class="text-center margin-top margin-bottom">
-                                <a href="#" class="btn">Lorem Ipsum Dolor</a>
-                                <a href="#" class="btn secondary">Lorem Ipsum Dolor</a>
+                            <div class="d-lg-flex text-center margin-top margin-bottom">
+                                <a href="#" class="btn flex-lg-fill">Lorem Ipsum Dolor</a>
+                                <a href="#" class="btn secondary flex-lg-fill">Lorem Ipsum Dolor</a>
                             </div>
                         </div>
                     </div>
