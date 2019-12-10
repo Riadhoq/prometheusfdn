@@ -222,7 +222,7 @@
                     <div class="col-lg-5">
                         <img class="img-fluid h-100 w-100" src="<?php echo get_template_directory_uri() . '/assets/img/corporate-image.jpg' ?>" alt="Women in discussing in front of laptop">
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-6 d-flex align-items-center">
                         <div class="px-3 pl-5">
                             <span class="top-dash margin-top"></span>
                             <h2 class="banner-header color-white">

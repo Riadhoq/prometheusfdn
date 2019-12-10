@@ -242,6 +242,7 @@ input#top-nav-menu {
 
 	.hero-container {
 		display: flex;
+		align-items: center;
 	}
 
 	.hero-btn-group {
@@ -250,8 +251,8 @@ input#top-nav-menu {
 
 	.hero-text {
 		max-width: 48em;
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		&::before {
 			content: "";
 			width: 175%;
@@ -275,9 +276,13 @@ input#top-nav-menu {
 		display: flex;
 		background-color: $blue;
 	}
-	.about-prometheus-image-container,
+
+	.about-prometheus-image-container {
+		width: 45%;
+	}
+
 	.about-prometheus-text-container {
-		width: 50%;
+		width: 55%;
 	}
 
 	.about-prometheus-image-container {
@@ -304,7 +309,7 @@ input#top-nav-menu {
 			background: #c9e1fb;
 			z-index: 0;
 			top: -50%;
-			left: -25%;
+			left: -15%;
 			border-bottom-left-radius: 50%;
 			border-top-left-radius: 50%;
 		}
