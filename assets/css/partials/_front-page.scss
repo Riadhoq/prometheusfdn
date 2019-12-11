@@ -254,7 +254,6 @@ input#top-nav-menu {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		&::before {
-			content: "";
 			width: 175%;
 			height: 280%;
 			top: -88%;
@@ -312,6 +311,16 @@ input#top-nav-menu {
 			left: -15%;
 			border-bottom-left-radius: 50%;
 			border-top-left-radius: 50%;
+		}
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	.hero-text {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		&::before {
+			left: -60%;
 		}
 	}
 }

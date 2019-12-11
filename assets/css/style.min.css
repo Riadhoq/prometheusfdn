@@ -895,7 +895,7 @@ h3{font-size:2rem;line-height:2.4375rem}
 .hero-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .hero-btn-group{text-align:center}
 .hero-text{max-width:48em;padding-top:2rem;padding-bottom:2rem}
-.hero-text::before{content:"";width:175%;height:280%;top:-88%;left:-46%;border-bottom-right-radius:50%;border-top-right-radius:50%}
+.hero-text::before{width:175%;height:280%;top:-88%;left:-46%;border-bottom-right-radius:50%;border-top-right-radius:50%}
 .hero-image-container{margin:auto 0 0 auto}
 .square-card{padding:2rem}
 .about-prometheus{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:#315b8a}
@@ -1270,6 +1270,13 @@ h3{font-size:2rem;line-height:2.4375rem}
 .mr-xxl-auto,.mx-xxl-auto{margin-right:auto !important}
 .mb-xxl-auto,.my-xxl-auto{margin-bottom:auto !important}
 .ml-xxl-auto,.mx-xxl-auto{margin-left:auto !important}
+html,body{font-size:20px;line-height:1.6rem}
+h1,.banner-header{font-size:4.8rem}
+h2{font-size:3rem}
+h3{font-size:2.4rem;line-height:3.2rem}
+.small{font-size:1rem;line-height:1.6rem}
+.hero-text{padding-top:4rem;padding-bottom:4rem}
+.hero-text::before{left:-60%}
 }@media(max-width:1200px){legend{font-size:calc(1.275rem + 0.3vw)}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
