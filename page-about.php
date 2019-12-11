@@ -1,5 +1,7 @@
+<?php /*Page Name: About*/ ?>
+
 <?php get_header() ?>
 
-404 Not Found
+About Page
 
 <?php get_footer() ?>

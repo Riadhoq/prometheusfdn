@@ -1,5 +1,7 @@
+<?php /*Page Name: Apply*/ ?>
+
 <?php get_header() ?>
 
-404 Not Found
+Apply Page
 
 <?php get_footer() ?>
