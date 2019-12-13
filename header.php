@@ -36,14 +36,17 @@
                     <span class="line line-2"></span>
                     <span class="line line-3"></span>
                 </label>
-                <nav class="nav-links d-lg-flex justify-content-center align-items-lg-baseline flex-wrap text-center">
-                    <li class="nav-link"><a href="/">Home</a></li>
-                    <li class="nav-link"><a href="/about">About</a></li>
-                    <li class="nav-link"><a href="/what-we-fund">What We Fund</a></li>
-                    <li class="nav-link"><a href="/faq">FAQ</a></li>
-                    <li class="nav-link"><a href="/contact">Contact</a></li>
-                    <li class="nav-link primary"><a href="/apply">Apply</a></li>
-                </nav>
+                <?php wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => 'nav',
+                        'container_class' => 'nav-links d-lg-flex justify-content-center align-items-lg-baseline flex-wrap text-center',
+                        'items_wrap' => '%3$s',
+                        'add_li_class'  => 'nav-link',
+                        'show_active' => true
+                    )
+                ); ?>
+
             </div>
         </div>
     </header>

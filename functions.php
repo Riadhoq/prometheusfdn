@@ -82,3 +82,23 @@ function add_theme_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
+/**
+ * Filter the CSS class for a nav menu based on a condition.
+ *
+ * @param array  $classes The CSS classes that are applied to the menu item's <li> element.
+ * @param object $item    The current menu item.
+ * @return array (maybe) modified nav menu class.
+ */
+function add_additional_class_on_li($classes, $item, $args)
+{
+    if (isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    if (in_array('current-menu-item', $classes) and ($args->show_active === true)) {
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 10, 3);
