@@ -53,8 +53,8 @@ if (!function_exists('prometheusfdn_setup')) :
          * Add support for two custom navigation menus.
          */
         register_nav_menus(array(
-            'primary'   => __('Primary Menu', 'prometheusfdn'),
-            'secondary' => __('Secondary Menu', 'prometheusfdn')
+            'primary'   => __('Nav Menu', 'prometheusfdn'),
+            'secondary' => __('Footer Menu', 'prometheusfdn')
         ));
 
         /**
@@ -62,6 +62,8 @@ if (!function_exists('prometheusfdn_setup')) :
          * aside, gallery, quote, image, and video
          */
         add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
+
+        add_filter('use_block_editor_for_post', '__return_false', 10);
     }
 endif; // prometheusfdn_setup
 add_action('after_setup_theme', 'prometheusfdn_setup');
