@@ -24,7 +24,9 @@
             </div>
         </div>
     </section>
+
     <?php get_template_part("template-parts/funding-program") ?>
+
     <section class="about-prometheus margin-top bg-light-blue overflow-hidden pb-5">
         <div class="about-prometheus-image-container">
             <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/assets/img/PF Logo - Isolated.png' ?>" alt="Prometheus Torch Light Image">
@@ -120,5 +122,5 @@
         </div>
     </section>
     <?php get_template_part("template-parts/get-started-banner") ?>
-</main>
-<?php get_footer() ?>
+
+    <?php get_footer() ?>

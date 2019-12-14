@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-4">
+        <div class="text-center mt-4 margin-bottom">
             <a href="#" class="btn btn-blue">Lorem Ipsum Dolor</a>
             <a href="#" class="btn btn-blue-secondary">Lorem Ipsum Dolor</a>
         </div>

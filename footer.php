@@ -1,3 +1,4 @@
+</main>
 <footer class="footer bg-gray">
     <div class="container-xxl">
         <div class="d-flex justify-content-md-between justify-content-center flex-column flex-md-row align-items-md-baseline">

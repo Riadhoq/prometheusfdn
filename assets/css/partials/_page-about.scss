@@ -1,0 +1,30 @@
+.about {
+	.hero-text {
+		padding-top: 20px;
+		&::before {
+			width: 150%;
+			height: 140%;
+			background-color: $light-blue;
+			border-bottom-right-radius: 0%;
+			border-bottom-left-radius: 0%;
+			border-top-right-radius: 50%;
+			border-top-left-radius: 50%;
+			top: -30%;
+			left: -25%;
+		}
+	}
+
+	.hero-image-container {
+		z-index: 1;
+	}
+}
+
+.our-mission {
+	.section-header {
+		border-bottom: none;
+		span {
+			display: block;
+			border-bottom: 6px solid $yellow;
+		}
+	}
+}
