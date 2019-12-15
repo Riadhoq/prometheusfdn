@@ -46,13 +46,15 @@
 </section>
 <section class="about-founder bg-light-blue">
     <div class="about-founder-image-container">
-        <img src="<?php echo get_template_directory_uri() . "/assets/img/Barney%20Founder.jpg" ?>" alt="" class="img-fluid-w-100">
+        <img src="<?php echo get_template_directory_uri() . "/assets/img/Barney%20Founder.jpg" ?>" alt="" class="img-fluid w-100">
     </div>
     <div class="about-founder-text-container">
         <div class="about-founder-text">
-            <h2 class="section-header color-blue">
-                About the Founder
-            </h2>
+            <div class="text-center text-lg-left">
+                <h2 class="section-header color-blue">
+                    About the Founder
+                </h2>
+            </div>
             <p>
                 Prometheus Foundation (PF) is an independent, non-profit enterprise whose mission is to actively promote Objectivism, the philosophy of Ayn Rand. To this end, PF seeks and funds proposals from individual Objectivists as well as from for-profit and non-profit organizations.</p>
 
@@ -71,6 +73,41 @@
                 Board of Directors
             </h2>
         </div>
+        <div class="row margin-top">
+            <div class="col-lg-4 staff-card">
+                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
+                <div class="staff-card-text">
+                    <h4>
+                        Firstname Lastname Lorem
+                    </h4>
+                    <h5 class="small">
+                        TITLE
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-4 staff-card">
+                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
+                <div class="staff-card-text">
+                    <h4>
+                        Firstname Lastname Lorem
+                    </h4>
+                    <h5 class="small">
+                        TITLE
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-4 staff-card">
+                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
+                <div class="staff-card-text">
+                    <h4>
+                        Firstname Lastname Lorem
+                    </h4>
+                    <h5 class="small">
+                        TITLE
+                    </h5>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -80,6 +117,41 @@
             <h2 class="section-header color-blue">
                 Our Staff
             </h2>
+        </div>
+        <div class="row margin-top">
+            <div class="col-lg-4 staff-card">
+                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
+                <div class="staff-card-text">
+                    <h4>
+                        Firstname Lastname Lorem
+                    </h4>
+                    <h5 class="small">
+                        TITLE
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-4 staff-card">
+                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
+                <div class="staff-card-text">
+                    <h4>
+                        Firstname Lastname Lorem
+                    </h4>
+                    <h5 class="small">
+                        TITLE
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-4 staff-card">
+                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
+                <div class="staff-card-text">
+                    <h4>
+                        Firstname Lastname Lorem
+                    </h4>
+                    <h5 class="small">
+                        TITLE
+                    </h5>
+                </div>
+            </div>
         </div>
     </div>
 </section>

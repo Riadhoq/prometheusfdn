@@ -35,4 +35,4 @@ $container-max-widths: (
 	xxl: 1660px
 );
 
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+// @include _assert-ascending($container-max-widths, "$container-max-widths");
