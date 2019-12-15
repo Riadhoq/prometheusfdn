@@ -1,0 +1,23 @@
+.application-hero-text {
+	counter-reset: section;
+	max-width: 320px;
+	padding: 60px 0 40px;
+	h5 {
+		margin-top: 1.5rem;
+	}
+	h5::before {
+		counter-increment: section;
+		content: counter(section);
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+		color: $yellow;
+		background-color: $blue;
+		border-radius: 50%;
+		font-size: 3.75rem;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 1rem;
+		margin-right: 20px;
+	}
+}

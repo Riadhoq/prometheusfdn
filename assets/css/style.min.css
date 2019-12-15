@@ -336,6 +336,9 @@ input#top-nav-menu{display:none}
 .what-we-fund-hero .hero-image-container img{height:100%}
 .faq-item{margin-top:2.5rem}
 .faq-answer{margin-left:1.5rem}
+.application-hero-text{counter-reset:section;max-width:320px;padding:60px 0 40px}
+.application-hero-text h5{margin-top:1.5rem}
+.application-hero-text h5::before{counter-increment:section;content:counter(section);display:inline-block;width:64px;height:64px;color:#fcca6c;background-color:#315b8a;border-radius:50%;font-size:3.75rem;text-align:center;vertical-align:middle;padding-top:1rem;margin-right:20px}
 .container.container-small{max-width:1140px}
 ul,nav{display:block;list-style-type:none;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}
 .top-dash{position:relative;background-color:#fcca6c;width:2em;height:6px;display:block;margin-bottom:1rem}
@@ -912,7 +915,7 @@ h3{font-size:2rem;line-height:2.4375rem}
 .navbar{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}
 .nav-links{overflow:hidden;opacity:1;max-height:30em;visibility:visible;width:auto}
 .toggle-label{display:none}
-.hero-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.hero-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-height:600px}
 .hero-btn-group{text-align:center}
 .hero-text{max-width:48em;padding-top:2rem;padding-bottom:2rem}
 .hero-text::before{width:175%;height:280%;top:-88%;left:-46%;border-bottom-right-radius:50%;border-top-right-radius:50%}
