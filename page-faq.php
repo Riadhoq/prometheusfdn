@@ -1,7 +1,7 @@
-<?php /*Page Name: Faq*/ ?>
+<?php /*Page Name: Faq*/
 
-<?php get_header() ?>
+get_header();
 
-FAQ Page
+get_template_part("template-parts/frequently-asked-questions");
 
-<?php get_footer() ?>
+get_footer();

@@ -15,3 +15,9 @@
 		}
 	}
 }
+
+@include media-breakpoint-up(xl) {
+	.what-we-fund-hero .hero-text {
+		margin-left: 6%;
+	}
+}

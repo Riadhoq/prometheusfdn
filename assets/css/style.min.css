@@ -334,6 +334,8 @@ input#top-nav-menu{display:none}
 .what-we-fund-hero .hero-text{margin:0 auto;z-index:1;padding-left:15px;padding-right:15px}
 .what-we-fund-hero .hero-image-container{max-width:100%;margin:0;height:100%}
 .what-we-fund-hero .hero-image-container img{height:100%}
+.faq-item{margin-top:2.5rem}
+.faq-answer{margin-left:1.5rem}
 .container.container-small{max-width:1140px}
 ul,nav{display:block;list-style-type:none;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}
 .top-dash{position:relative;background-color:#fcca6c;width:2em;height:6px;display:block;margin-bottom:1rem}
@@ -1116,6 +1118,7 @@ h3{font-size:2rem;line-height:2.4375rem}
 .mr-xl-auto,.mx-xl-auto{margin-right:auto !important}
 .mb-xl-auto,.my-xl-auto{margin-bottom:auto !important}
 .ml-xl-auto,.mx-xl-auto{margin-left:auto !important}
+.what-we-fund-hero .hero-text{margin-left:6%}
 }@media(min-width:1660px){.container{max-width:1660px}
 .container,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl{max-width:1660px}
 .col-xxl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
