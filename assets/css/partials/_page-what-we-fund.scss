@@ -1,0 +1,17 @@
+.what-we-fund-hero {
+	.hero-text {
+		margin: 0 auto;
+		z-index: 1;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.hero-image-container {
+		max-width: 100%;
+		margin: 0;
+		height: 100%;
+		img {
+			height: 100%;
+		}
+	}
+}
