@@ -5,3 +5,12 @@
 .faq-answer {
 	margin-left: 1.5rem;
 }
+
+@media screen and (max-width: 376px) {
+	.faq-section .section-header {
+		border-bottom: none;
+		span {
+			border-bottom: 6px solid $yellow;
+		}
+	}
+}

@@ -1,7 +1,7 @@
-<section class="container container-small padding-top padding-bottom">
+<section class="faq-section container container-small padding-top padding-bottom">
     <div class="text-center margin-top margin-bottom">
         <h2 class="section-header color-blue">
-            Frequently Asked&nbsp;Question
+            Frequently <span>Asked&nbsp;Question</span>
         </h2>
     </div>
 

@@ -1318,6 +1318,8 @@ h3{font-size:2.4rem;line-height:3.2rem}
 .hero-text::before{left:-60%}
 .application-steps-hero h5::before{width:118px;height:118px;padding-top:2rem}
 }@media(max-width:1200px){legend{font-size:calc(1.275rem + 0.3vw)}
+}@media screen and (max-width:376px){.faq-section .section-header{border-bottom:0}
+.faq-section .section-header span{border-bottom:6px solid #fcca6c}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
 .d-print-inline-block{display:inline-block !important}
