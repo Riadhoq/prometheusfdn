@@ -28,7 +28,9 @@
         <div class="header-container container-xxl">
             <div class="navbar">
                 <div class="nav-logo-container">
-                    <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri() . '/assets/img/Group%2023.png' ?>" alt="">
+                    <a href="/">
+                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri() . '/assets/img/Group%2023.png' ?>" alt="">
+                    </a>
                 </div>
                 <input type="checkbox" name="top-nav-menu" id="top-nav-menu">
                 <label class="toggle-label" for="top-nav-menu">

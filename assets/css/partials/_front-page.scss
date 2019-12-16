@@ -79,8 +79,8 @@ input#top-nav-menu {
 }
 
 .nav-logo-container {
-	padding-right: 5rem;
-	max-width: 365px;
+	padding-right: 8rem;
+	max-width: 412px;
 	flex: 1;
 }
 
@@ -180,6 +180,7 @@ input#top-nav-menu {
 	height: 0%;
 	padding-top: 100%;
 	margin: 0 auto;
+	//text-align: center;
 }
 
 .circle-card-content {
@@ -226,6 +227,11 @@ input#top-nav-menu {
 
 	.navbar {
 		align-items: baseline;
+	}
+
+	.nav-logo-container {
+		padding-right: 5rem;
+		max-width: 365px;
 	}
 
 	.nav-links {
@@ -279,13 +285,6 @@ input#top-nav-menu {
 
 	.about-prometheus-image-container {
 		width: 45%;
-	}
-
-	.about-prometheus-text-container {
-		width: 55%;
-	}
-
-	.about-prometheus-image-container {
 		&::before {
 			content: none;
 		}
@@ -301,12 +300,13 @@ input#top-nav-menu {
 	.about-prometheus-text-container {
 		display: flex;
 		align-items: center;
+		width: 55%;
 		&::before {
 			content: "";
 			position: absolute;
 			width: 150%;
 			height: 200%;
-			background: #c9e1fb;
+			background: $light-blue;
 			z-index: 0;
 			top: -50%;
 			left: -15%;

@@ -1,4 +1,4 @@
-.application-hero-text {
+.application-steps-hero {
 	counter-reset: section;
 	max-width: 320px;
 	padding: 60px 0 40px;
@@ -19,5 +19,36 @@
 		vertical-align: middle;
 		padding-top: 1rem;
 		margin-right: 20px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.application-steps-hero {
+		width: (50% - 16.333333%);
+		margin: 0 auto;
+		margin-left: 16.333333%;
+		max-width: unset;
+
+		// h5::before {
+		// 	width: 118px;
+		// 	height: 118px;
+		// 	padding-top: 1rem;
+		// }
+	}
+	.application-hero-text {
+		&::before {
+			left: -55%;
+		}
+		width: 50%;
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	.application-steps-hero {
+		h5::before {
+			width: 118px;
+			height: 118px;
+			padding-top: 2rem;
+		}
 	}
 }

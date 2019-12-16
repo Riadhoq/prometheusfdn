@@ -4,7 +4,7 @@
 
 <section class="hero color-white bg-light-blue overflow-hidden">
     <div class="container-xxl hero-container">
-        <div class="hero-text">
+        <div class="application-hero-text hero-text">
             <span class="top-dash"></span>
             <h1 class="hero-header">
                 Submit your application&nbsp;today
@@ -19,7 +19,7 @@
                 <a href="#" class="btn mt-4">Lorem Ipsum Dolor</a>
             </div>
         </div>
-        <div class="hero-image-container application-hero-text color-black text-uppercase">
+        <div class="hero-image-container application-steps-hero color-black text-uppercase">
             <h5>Choose a funding program</h5>
             <h5>Fill out the application</h5>
             <h5>Check your email</h5>
@@ -27,6 +27,8 @@
     </div>
 </section>
 
-<?php get_template_part("template-parts/frequently-asked-questions") ?>
+<div class="bg-gray">
+    <?php get_template_part("template-parts/frequently-asked-questions") ?>
+</div>
 
 <?php get_footer() ?>

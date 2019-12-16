@@ -1,4 +1,4 @@
-<section class="container container-small margin-top margin-bottom">
+<section class="container container-small padding-top padding-bottom">
     <div class="text-center margin-top margin-bottom">
         <h2 class="section-header color-blue">
             Frequently Asked&nbsp;Question
