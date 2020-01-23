@@ -262,6 +262,7 @@ h1,.banner-header{font-size:2.5rem;line-height:2.625rem;font-weight:normal}
 h2{font-size:2rem;line-height:2.625rem;font-weight:normal}
 h3{font-size:1.5rem;line-height:2.4375rem}
 h4{font-size:1.25rem;line-height:1.6875rem;font-weight:bold}
+img.size-large,.attachment-post-thumbnail{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}
 .small{font-size:.75rem;line-height:1.0625rem}
 .sub{font-weight:600;line-height:1.375rem;max-width:40em}
 .text-uppercase{text-transform:uppercase}
