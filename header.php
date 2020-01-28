@@ -21,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
+
 </head>
 
 <body>
@@ -29,7 +30,12 @@
             <div class="navbar">
                 <div class="nav-logo-container">
                     <a href="/">
-                        <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri() . '/assets/img/Group%2023.png' ?>" alt="">
+                        <?php if (function_exists('the_custom_logo')) {
+                            $custom_logo_id = get_theme_mod('custom_logo');
+                            $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
+                            echo '<img class="w-100 img-fluid" src="' . esc_url($custom_logo_url) . '" alt="">';
+                        }
+                        ?>
                     </a>
                 </div>
                 <input type="checkbox" name="top-nav-menu" id="top-nav-menu">

@@ -49,6 +49,11 @@ if (!function_exists('prometheusfdn_setup')) :
 	 */
         add_theme_support('title-tag');
 
+        /** 
+         * add custom logo support
+         */
+        add_theme_support('custom-logo');
+
         /**
          * Add support for two custom navigation menus.
          */

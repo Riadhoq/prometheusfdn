@@ -3,7 +3,12 @@
     <div class="container-xxl">
         <div class="d-flex justify-content-md-between justify-content-center flex-column flex-md-row align-items-md-baseline">
             <div class="footer-logo-container">
-                <img class="w-100 img-fluid" src="<?php echo get_template_directory_uri() . '/assets/img/Group%2023.png' ?>" alt="">
+                <?php if (function_exists('the_custom_logo')) {
+                    $custom_logo_id = get_theme_mod('custom_logo');
+                    $custom_logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
+                    echo '<img class="w-100 img-fluid" src="' . esc_url($custom_logo_url) . '" alt="">';
+                }
+                ?>
             </div>
             <?php wp_nav_menu(
                 array(
