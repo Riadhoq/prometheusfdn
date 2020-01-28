@@ -2,7 +2,8 @@
     <div class="container-xxl">
         <div class="text-center">
             <h2 class="section-header color-blue">
-                Funding Program
+                <?php
+                the_field('funding_title', 'option') ?>
             </h2>
             <p class="sub color-gray margin-top-half">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.

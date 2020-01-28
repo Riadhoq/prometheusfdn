@@ -69,6 +69,11 @@ if (!function_exists('prometheusfdn_setup')) :
         add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
 
         add_filter('use_block_editor_for_post', '__return_false', 10);
+
+        if (function_exists('acf_add_options_page')) {
+
+            acf_add_options_page();
+        }
     }
 endif; // prometheusfdn_setup
 add_action('after_setup_theme', 'prometheusfdn_setup');

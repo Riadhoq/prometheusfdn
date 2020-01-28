@@ -4,22 +4,16 @@
         <div class="hero-text">
             <span class="top-dash"></span>
             <h1 class="hero-header">
-                Objectivists:<br class="hero-br" />
-                Put your ideas to work.
+                <?php the_field('home_title') ?>
             </h1>
-            <p class="sub">Lorem ipsum dolor sit amet, consetetur
-                sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero
-                eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren.</p>
+            <p class="sub"><?php the_field('home_subtitle') ?></p>
             <div class="hero-btn-group d-lg-flex">
-                <a href="#" class="btn mt-4 flex-lg-fill">Lorem Ipsum Dolor</a>
-                <a href="#" class="btn secondary mt-lg-4 flex-lg-fill">Lorem Ipsum Dolor</a>
+                <a href="<?php the_field('home_hero_primary_btn') ?>" class="btn mt-4 flex-lg-fill">Lorem Ipsum Dolor</a>
+                <a href="<?php the_field('home_hero_secondary_btn') ?>" class="btn secondary mt-lg-4 flex-lg-fill">Lorem Ipsum Dolor</a>
             </div>
         </div>
         <div class="hero-image-container">
-            <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/assets/img/ar-at-typewriter-bw.png' ?>" alt="Ayn Rand Black & White Image">
+            <img class="img-fluid w-100" src="<?php the_field('home_hero_image') ?>" alt="Ayn Rand Black & White Image">
         </div>
     </div>
 </section>
