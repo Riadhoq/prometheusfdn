@@ -1,4 +1,8 @@
-<?php /*Page Name: Apply*/ ?>
+<?php /*Page Name: Apply*/
+
+$hero_button = get_field('button');
+
+?>
 
 <?php get_header() ?>
 
@@ -7,22 +11,21 @@
         <div class="application-hero-text hero-text">
             <span class="top-dash"></span>
             <h1 class="hero-header">
-                Submit your application&nbsp;today
+                <?php the_field('title') ?>
             </h1>
-            <p class="sub">Lorem ipsum dolor sit amet, consetetur
-                sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero
-                eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren.</p>
+            <p class="sub">
+                <?php the_field('subtitle') ?>
+            </p>
             <div class="hero-btn-group d-lg-flex">
-                <a href="#" class="btn mt-4">Lorem Ipsum Dolor</a>
+                <?php if ($hero_button) : ?>
+                    <a href="<?php echo $hero_button['link'] ?>" class="btn mt-4"><?php echo $hero_button['label'] ?></a>
+                <?php endif; ?>
             </div>
         </div>
         <div class="hero-image-container application-steps-hero color-black text-uppercase">
-            <h5>Choose a funding program</h5>
-            <h5>Fill out the application</h5>
-            <h5>Check your email</h5>
+            <h5><?php the_field('step_1') ?></h5>
+            <h5><?php the_field('step_2') ?></h5>
+            <h5><?php the_field('step_3') ?></h5>
         </div>
     </div>
 </section>

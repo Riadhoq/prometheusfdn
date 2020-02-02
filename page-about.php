@@ -1,160 +1,128 @@
-<?php /*Page Name: About*/ ?>
+<?php /*Page Name: About*/
+
+$our_mission_section = get_field('our_mission_section');
+$about_the_founder = get_field('about_the_founder');
+$board_of_directors_section = 'board_of_directors_section';
+$staff_section = 'staff_section';
+
+?>
 
 <?php get_header() ?>
 
 <section class="about hero bg-blue overflow-hidden">
     <div class="container-xxl hero-container">
         <div class="hero-image-container">
-            <img src="<?php echo get_template_directory_uri() . "/assets/img/PF%20Logo%20-%20Isolated.png" ?>" alt="" class="img-fluid w-100">
+            <img src="<?php the_field('hero_image') ?>" alt="" class="img-fluid w-100">
         </div>
         <div class="hero-text">
             <span class="top-dash"></span>
             <h1 class="hero-header color-blue">
-                About Prometheus Foundation
+                <?php the_field('title') ?>
             </h1>
             <p class="sub">
-                Lorem ipsum dolor sit amet, consetetur
-                sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero
-                eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren.
+                <?php the_field('subtitle') ?>
             </p>
         </div>
     </div>
 </section>
-<section class="our-mission margin-top">
-    <div class="container container-small">
-        <div class="text-center">
-            <h2 class="section-header color-blue">
-                Our Mission:<span>Advance Objectivism</span>
-            </h2>
-            <p class="sub color-gray margin-top-half">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
-            </p>
-        </div>
-        <div class="margin-top margin-bottom">
-            <p>
-                Prometheus Foundation (PF) is an independent, non-profit enterprise whose mission is to actively promote Objectivism, the philosophy of Ayn Rand. To this end, PF seeks and funds proposals from individual Objectivists as well as from for-profit and non-profit organizations.</p>
-
-            <p>Prometheus Foundation operates with two funds: The Objectivist Venture Fund (OVF) and the New Intellectuals Fund (NIF). Carl Barney, a long-time advocate of Objectivist ideas, is the originator and sole funding source for Prometheus.</p>
-
-            <p>Objectivist Venture Fund was first announced at the Ayn Rand Institute’s 2014 Objectivist Summer Conference, and inaugurated shortly thereafter. OVF underwrites innovative projects whose aim is to spread Ayn Rand’s ideas with maximum impact.
-            </p>
-        </div>
-    </div>
-</section>
-<section class="about-founder bg-light-blue">
-    <div class="about-founder-image-container">
-        <img src="<?php echo get_template_directory_uri() . "/assets/img/Barney%20Founder.jpg" ?>" alt="" class="img-fluid w-100">
-    </div>
-    <div class="about-founder-text-container">
-        <div class="about-founder-text">
-            <div class="text-center text-lg-left">
+<?php if ($our_mission_section) : ?>
+    <section class="our-mission margin-top">
+        <div class="container container-small">
+            <div class="text-center">
                 <h2 class="section-header color-blue">
-                    About the Founder
+                    <?php echo $our_mission_section['title'] ?>
                 </h2>
+                <p class="sub color-gray margin-top-half">
+                    <?php echo $our_mission_section['subtitle'] ?>
+                </p>
             </div>
-            <p>
-                Prometheus Foundation (PF) is an independent, non-profit enterprise whose mission is to actively promote Objectivism, the philosophy of Ayn Rand. To this end, PF seeks and funds proposals from individual Objectivists as well as from for-profit and non-profit organizations.</p>
+            <div class="margin-top margin-bottom">
+                <?php echo $our_mission_section['text'] ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+<?php if ($about_the_founder) : ?>
+    <section class="about-founder bg-light-blue">
+        <div class="about-founder-image-container">
+            <img src="<?php echo $about_the_founder['founder_image'] ?>" alt="" class="img-fluid w-100">
+        </div>
+        <div class="about-founder-text-container">
+            <div class="about-founder-text">
+                <div class="text-center text-lg-left">
+                    <h2 class="section-header color-blue">
+                        <?php echo $about_the_founder['title'] ?>
+                    </h2>
+                </div>
+                <?php echo $about_the_founder['text'] ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
-            <p>Prometheus Foundation operates with two funds: The Objectivist Venture Fund (OVF) and the New Intellectuals Fund (NIF). Carl Barney, a long-time advocate of Objectivist ideas, is the originator and sole funding source for Prometheus.</p>
+<?php if (have_rows($board_of_directors_section)) :
+    while (have_rows($board_of_directors_section)) : the_row(); ?>
+        <section class="margin-top">
+            <div class="container container-small">
+                <div class="text-center">
+                    <h2 class="section-header color-blue">
+                        <?php the_sub_field('title') ?>
+                    </h2>
+                </div>
+                <?php if (have_rows('directors')) : ?>
+                    <div class="row margin-top">
+                        <?php while (have_rows('directors')) : the_row(); ?>
+                            <div class="col-lg-4 staff-card">
+                                <img src="<?php the_sub_field('image') ?>" alt="" class="staff-image">
+                                <div class="staff-card-text">
+                                    <h4>
+                                        <?php the_sub_field('name') ?>
+                                    </h4>
+                                    <h5 class="small">
+                                        <?php the_sub_field('title') ?>
+                                    </h5>
+                                </div>
+                            </div>
+                    <?php
+                        endwhile;
+                    endif; ?>
+                    </div>
+        </section>
+<?php
+    endwhile;
+endif; ?>
 
-            <p>Objectivist Venture Fund was first announced at the Ayn Rand Institute’s 2014 Objectivist Summer Conference, and inaugurated shortly thereafter. OVF underwrites innovative projects whose aim is to spread Ayn Rand’s ideas with maximum impact.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="margin-top">
-    <div class="container container-small">
-        <div class="text-center">
-            <h2 class="section-header color-blue">
-                Board of Directors
-            </h2>
-        </div>
-        <div class="row margin-top">
-            <div class="col-lg-4 staff-card">
-                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
-                <div class="staff-card-text">
-                    <h4>
-                        Firstname Lastname Lorem
-                    </h4>
-                    <h5 class="small">
-                        TITLE
-                    </h5>
+<?php if (have_rows($staff_section)) :
+    while (have_rows($staff_section)) : the_row(); ?>
+        <section class="margin-top">
+            <div class="container container-small">
+                <div class="text-center">
+                    <h2 class="section-header color-blue">
+                        <?php the_sub_field('title') ?>
+                    </h2>
                 </div>
-            </div>
-            <div class="col-lg-4 staff-card">
-                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
-                <div class="staff-card-text">
-                    <h4>
-                        Firstname Lastname Lorem
-                    </h4>
-                    <h5 class="small">
-                        TITLE
-                    </h5>
-                </div>
-            </div>
-            <div class="col-lg-4 staff-card">
-                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
-                <div class="staff-card-text">
-                    <h4>
-                        Firstname Lastname Lorem
-                    </h4>
-                    <h5 class="small">
-                        TITLE
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="margin-top">
-    <div class="container container-small">
-        <div class="text-center">
-            <h2 class="section-header color-blue">
-                Our Staff
-            </h2>
-        </div>
-        <div class="row margin-top">
-            <div class="col-lg-4 staff-card">
-                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
-                <div class="staff-card-text">
-                    <h4>
-                        Firstname Lastname Lorem
-                    </h4>
-                    <h5 class="small">
-                        TITLE
-                    </h5>
-                </div>
-            </div>
-            <div class="col-lg-4 staff-card">
-                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
-                <div class="staff-card-text">
-                    <h4>
-                        Firstname Lastname Lorem
-                    </h4>
-                    <h5 class="small">
-                        TITLE
-                    </h5>
-                </div>
-            </div>
-            <div class="col-lg-4 staff-card">
-                <img src="https://via.placeholder.com/215x215" alt="" class="staff-image">
-                <div class="staff-card-text">
-                    <h4>
-                        Firstname Lastname Lorem
-                    </h4>
-                    <h5 class="small">
-                        TITLE
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                <?php if (have_rows('staff')) : ?>
+                    <div class="row margin-top">
+                        <?php while (have_rows('staff')) : the_row(); ?>
+                            <div class="col-lg-4 staff-card">
+                                <img src="<?php the_sub_field('image') ?>" alt="" class="staff-image">
+                                <div class="staff-card-text">
+                                    <h4>
+                                        <?php the_sub_field('name') ?>
+                                    </h4>
+                                    <h5 class="small">
+                                        <?php the_sub_field('title') ?>
+                                    </h5>
+                                </div>
+                            </div>
+                    <?php
+                        endwhile;
+                    endif; ?>
+                    </div>
+        </section>
+<?php
+    endwhile;
+endif; ?>
 
 <?php get_template_part("template-parts/funding-program") ?>
 
