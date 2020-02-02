@@ -5,16 +5,33 @@
 <section class="margin-top margin-bottom">
     <div class="text-center">
         <h2 class="section-header">
-            Contact Us
+            <?php the_field('title') ?>
         </h2>
         <p class="sub color-gray margin-top-half">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
+            <?php the_field('subtitle') ?>
         </p>
     </div>
 
-    <div class="container">
-        Form
-    </div>
+    <?php
+    // Start the loop.
+    while (have_posts()) : the_post();
+
+        /*
+     * Include the post format-specific template for the content. If you want to
+     * use this in a child theme, then include a file called called content-___.php
+     * (where ___ is the post format) and that will be used instead.
+     */
+    ?>
+        <div class="container">
+            <?php
+            if (has_post_thumbnail()) {
+                the_post_thumbnail();
+            }
+            the_content();
+            ?>
+        </div>
+    <?php endwhile; ?>
 </section>
+
 
 <?php get_footer() ?>

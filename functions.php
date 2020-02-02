@@ -70,10 +70,45 @@ if (!function_exists('prometheusfdn_setup')) :
 
         add_filter('use_block_editor_for_post', '__return_false', 10);
 
+
+        /**
+         * Start ACF related Code
+         */
         if (function_exists('acf_add_options_page')) {
 
             acf_add_options_page();
+
+            acf_add_options_sub_page(array(
+                'page_title'     => 'Funding Program Content',
+                'menu_title'    => 'Funding Program',
+                'menu_slug'     => 'funding-program',
+                'capability'    => 'edit_posts',
+                'post_id' => 'funding-program',
+                'redirect'        => false
+            ));
+
+            acf_add_options_sub_page(array(
+                'page_title'     => 'Get Started Banner',
+                'menu_title'    => 'Get Started Banner',
+                'menu_slug'     => 'get-started-banner',
+                'post_id' => 'get-started-banner',
+                'capability'    => 'edit_posts',
+                'redirect'        => false
+            ));
+
+            acf_add_options_sub_page(array(
+                'page_title'     => 'Frequently Asked Questions',
+                'menu_title'    => 'Frequently Asked Questions',
+                'menu_slug'     => 'frequently-asked-questions',
+                'post_id' => 'frequently-asked-questions',
+                'capability'    => 'edit_posts',
+                'redirect'        => false
+            ));
         }
+
+        /**
+         * End ACF related Code
+         */
     }
 endif; // prometheusfdn_setup
 add_action('after_setup_theme', 'prometheusfdn_setup');
