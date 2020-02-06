@@ -3,3 +3,23 @@
     Author Name: Riadul Hoque
     Author Url: https://riadulhoque.com
 */
+
+/* form style*/
+
+.wpforms-container-full {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wpforms-form button[type=submit] {
+    background-color: #fcca6c !important;
+    border: 2px solid #fcca6c !important;
+    color: #315b8a !important;
+    padding: .5em 1.675em !important;
+    border-radius: 7px;
+}
+ 
+.wpforms-form button[type=submit]:hover {
+    color: #fcca6c !important;
+    background-color: #315b8a !important;
+}

@@ -22,7 +22,7 @@
      * (where ___ is the post format) and that will be used instead.
      */
     ?>
-        <div class="container">
+        <div class="container mt-5">
             <?php
             if (has_post_thumbnail()) {
                 the_post_thumbnail();

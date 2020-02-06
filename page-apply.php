@@ -30,6 +30,28 @@ $hero_button = get_field('button');
     </div>
 </section>
 
+<?php get_template_part("template-parts/funding-program-no-buttons") ?>
+
+<?php
+// Start the loop.
+while (have_posts()) : the_post();
+
+    /*
+     * Include the post format-specific template for the content. If you want to
+     * use this in a child theme, then include a file called called content-___.php
+     * (where ___ is the post format) and that will be used instead.
+     */
+?>
+    <div class="container mt-5" id="form">
+        <?php
+        if (has_post_thumbnail()) {
+            the_post_thumbnail();
+        }
+        the_content();
+        ?>
+    </div>
+<?php endwhile; ?>
+
 <div class="bg-gray">
     <?php get_template_part("template-parts/frequently-asked-questions") ?>
 </div>

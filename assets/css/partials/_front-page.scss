@@ -79,7 +79,9 @@ input#top-nav-menu {
 }
 
 .nav-logo-container {
-	padding-right: 8rem;
+	padding: 15px;
+    padding-right: 8rem;
+    padding-left: 0px;
 	max-width: 412px;
 	flex: 1;
 }
@@ -196,6 +198,7 @@ input#top-nav-menu {
 
 .footer-logo-container {
 	max-width: 720px;
+	padding: 20px;
 }
 
 .nav-link,
@@ -217,10 +220,6 @@ input#top-nav-menu {
 
 /** Responsive styles **/
 @include media-breakpoint-up(lg) {
-	.header-container {
-		margin-bottom: -1.2rem;
-	}
-
 	.hero-br {
 		display: block;
 	}
@@ -240,6 +239,10 @@ input#top-nav-menu {
 		max-height: 30em;
 		visibility: visible;
 		width: auto;
+	}
+
+	.nav-links li:last-of-type {
+		margin-bottom: 0;
 	}
 
 	.toggle-label {
