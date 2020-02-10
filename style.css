@@ -23,3 +23,31 @@
     color: #fcca6c !important;
     background-color: #315b8a !important;
 }
+
+/* Additional page style */
+
+.custom-article ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.custom-article h2 {
+    font-weight: 700;
+}
+
+.custom-article img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    border-left: 2px solid #fcca6c;
+    margin: 1.5rem 0 1.5rem;
+    padding-left: 2rem;
+    color: #686868;
+}
